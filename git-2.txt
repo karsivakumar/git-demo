@@ -1,6 +1,7 @@
-"git commit" - commits the code to the git repository from local repository (staging area),
+"git commit" - commits code to the git repository from local repository (staging area) which has already been 
+                edited and added before,
                 
                 -am says to automatically stage and commit modified and deleted components with the given message
                 git commit -am "message"
                 
-                but the new components which have not been added recently to workspace are not changed
+                but new components which have not been added to repository / workspace are not changed
