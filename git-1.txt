@@ -26,7 +26,7 @@ File4   ->  unmodifed
 
 "git status" - shows the latest status of git in the working directory
 
-"git commit" - commits the code to the git repository from local repository,
+"git commit" - commits the code to the git repository from local repository (staging area),
                 -m says message is to follow, find example below for the same,
                 git commit -m "message"
 
