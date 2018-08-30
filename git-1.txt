@@ -1,6 +1,33 @@
+git structure
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    Working Directory               Staging Area                GIT Directory (repo)            Remote Repo
+    
+Local           GIT
+
+File        |                               |                           |                           |
+File        |--------Stage Files----------->|                           |                           |
+File        |File1      File2               |                           |                           |
+File        |                               |--------Commit Files------>|                           |
+            |                               |File3      File4           |                           |
+            |<--------Checkout--------------|                           |---------Push Files------->|
+            |                               |                           |                           |
+            |                               |                           |File4                      |
+            |                               |                           |<-------Fetch Files--------|
+
+File1   ->  Modified
+File2   ->  untracked
+File3   ->  staged
+File4   ->  unmodifed
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 "git init" - initializes git to work in a working folder
 
 "git status" - shows the latest status of git in the working directory
 
-"git commit" - commits the code to the git repository, -m says message is to follow, find example below for the same,
+"git commit" - commits the code to the git repository from local repository,
+                -m says message is to follow, find example below for the same,
                 git commit -m "message"
+
+"git add" - add a file from the working directory to the staging area
