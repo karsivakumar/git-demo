@@ -1,0 +1,8 @@
+"git reset HEAD <file>"     - unstages a file to the status which it was previously available in the 
+                                 git Staging repository,
+                
+                code is still available in the local repository though. to overwrite, use the git checkout command.
+                
+
+"git checkout -- <file>"     - checkout a file from the GIT repository to the current working version of the code 
+                after discarding the current unstaged version of the code.
