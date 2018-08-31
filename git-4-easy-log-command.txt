@@ -1,0 +1,34 @@
+git log --oneline --graph --decorate --all
+
+       --no-decorate, --decorate[=short|full|auto|no]
+           Print out the ref names of any commits that are shown. If short is specified, the ref name prefixes
+           refs/heads/, refs/tags/ and refs/remotes/ will not be printed. If full is specified, the full ref name
+           (including prefix) will be printed. If auto is specified, then if the output is going to a terminal, the ref
+           names are shown as if short were given, otherwise no ref names are shown. The default option is short
+           
+        --graph
+           Draw a text-based graphical representation of the commit history on the left hand side of the output. This
+           may cause extra lines to be printed in between commits, in order for the graph history to be drawn properly.
+           Cannot be combined with --no-walk.
+
+           This enables parent rewriting, see History Simplification below.
+
+           This implies the --topo-order option by default, but the --date-order option may also be specified.
+           
+        PRETTY FORMATS
+       If the commit is a merge, and if the pretty-format is not oneline, email or raw, an additional line is inserted
+       before the Author: line. This line begins with "Merge: " and the sha1s of ancestral commits are printed,
+       separated by spaces. Note that the listed commits may not necessarily be the list of the direct parent commits
+       if you have limited your view of history: for example, if you are only interested in changes related to a
+       certain directory or file.
+
+       There are several built-in formats, and you can define additional formats by setting a pretty.<name> config
+       option to either another format name, or a format: string, as described below (see git-config(1)). Here are the
+       details of the built-in formats:
+       
+       
+       ·   oneline
+
+               <sha1> <title line>
+
+           This is designed to be as compact as possible.

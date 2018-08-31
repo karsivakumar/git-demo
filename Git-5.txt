@@ -1,0 +1,5 @@
+GIT MV <FILE-1> <FILE-2>
+
+Moving a file under another name within GIT.
+
+same 
