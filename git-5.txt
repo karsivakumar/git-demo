@@ -7,3 +7,7 @@ git rm <FILE-1> <FILE-2>
 Moving a file under another name within GIT.
 
 same 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you move a file ouside of GIT, it will show in "git status" as a delete and a new file insted of a move. 
