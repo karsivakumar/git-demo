@@ -6,8 +6,17 @@ git rm <FILE-1> <FILE-2>
 
 Moving a file under another name within GIT.
 
-same 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you move a file ouside of GIT, it will show in "git status" as a delete and a new file insted of a move.
+
+If you delete a file ouside of GIT, it will show in "git status" as a delete, but doing a "git add" will sync
+it to the repositry and no longer throw error.
+
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you move a file ouside of GIT, it will show in "git status" as a delete and a new file insted of a move. 
+.gitignore is used to ignore files from being considered to be pushed on to the repo/
+
+create a file called .gitignore in the local repository folder and create the type of extensions which are to be 
+ignored while checking against the GIT repository
