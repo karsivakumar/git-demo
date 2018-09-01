@@ -1,0 +1,6 @@
+git config --global diff.tool tkdiff
+git config --global merge.tool tkdiff
+git config --global --add difftool.prompt false
+
+add the above text to configure diff tool (tkdiff - puneet uses p4diff isntead) and merge tool in GIT, might not be fruitful in c9, but can be done outside
+c9.
