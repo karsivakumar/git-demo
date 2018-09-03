@@ -12,3 +12,15 @@ git -b checkout "new branch name"
 
 alternatively use -b checkout to create a new branch and also checkout 
 the new branch thus created.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+git merge "branch name"
+
+merges the branch denoted by name to the active branch
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+git branch -d "branch name"
+
+deletes the denoted by name
