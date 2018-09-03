@@ -1,0 +1,24 @@
+git tag "tagname"
+
+creates a simple tag with the name tagname, but using this by itself does not 
+provide any major benefit to using
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+rather let us use annotated tags which will help us with taking snapshots in time,
+
+"git tag -a "tag name" -m "tag message"
+
+here -a refers to annotation and -m refers to the tag message
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+git tag --list
+
+shows a list of all tags that have been created as a part of the versioning system
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+git tag "tagname" -d
+
+deletes the tag with the name tagname
