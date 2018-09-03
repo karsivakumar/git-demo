@@ -5,3 +5,10 @@ to create a new brach with the given name
 git checkout "new branch name"
 
 to checkout the already created new branch
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+git -b checkout "new branch name"
+
+alternatively use -b checkout to create a new branch and also checkout 
+the new branch thus created.
