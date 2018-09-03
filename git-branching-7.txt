@@ -17,11 +17,17 @@ the new branch thus created.
 
 git merge "branch name"
 
-merges the branch denoted by name to the active branch. This must be done post the switch
-to the active branch from the named branch.
+after you do a checkout of the target branch, 
+issue a merge from the branch denoted by name to the currently active branch
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 git branch -d "branch name"
 
 deletes the denoted by name
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+when a file is changed in both the parent branch and the child branch, the 
+merge conflicts with the other, automatic merge fails, then a manual resolution
+of the conflict is needed to perform a merge.
