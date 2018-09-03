@@ -1,0 +1,7 @@
+git branch "new branch name"
+
+to create a new brach with the given name
+
+git checkout "new branch name"
+
+to checkout the already created new branch
