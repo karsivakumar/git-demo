@@ -1,0 +1,17 @@
+git stash
+
+stashes (puts away) the changes that are done when between the last commit and now.
+Once done, the "git status" again shows a clean working tree.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+git stash list
+
+shows the list of stashes that are available and have been put away from the current master
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+git stash pop
+
+pops the last changes from the list of stash'es that have been put away with the
+"git stash" command.
