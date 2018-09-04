@@ -22,3 +22,9 @@ shows a list of all tags that have been created as a part of the versioning syst
 git tag "tagname" -d
 
 deletes the tag with the name tagname
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+git show "tagname"
+
+shows more information about a particular tag
