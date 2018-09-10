@@ -1,0 +1,30 @@
+git reset "version-id" <option>
+
+version-id  -   can be got by "git log --oneline --graph --all -decorate" command
+
+option can take values --soft / --mixed / --hard
+
+--soft  -   this will preserve the changes that you have made in the working directory as 
+            well as in the staging area (ie a status will still show the latest changes that 
+            you have made in the working directory as well as staged (add .) but uncommitted
+            changes)
+
+--mixed -   this will preserve the changes that you have made in the working directory ONLY,
+            any changes that you have made to the staging directory but are uncommitted will
+            have been reset (still would be in the working directory though)
+
+--hard  -   this will NOT preserve any changes that you have made, any change to the working 
+            or to the staging directory would have all been entirely lost and would be reset 
+            to the status at the point given by the "version-id"
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+git reflog      /    git reflog show HEAD
+
+Reflog tracks Git refs updates to any repository branch. In both the above two commands, 
+they point to the reference logs to the HEAD directory.
+
+In addition to branch tip reflogs, a special reflog is maintained for the Git stash (in 
+case a stash is being maintained by the "git stash" command).
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
