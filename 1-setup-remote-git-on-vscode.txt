@@ -1,0 +1,11 @@
+to configure your email on the vscode terminal
+
+git config --global user.email XXXX@XXXX.COM
+
+commit the code in local by initialzing git adding your repository and typing a message
+
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/<username>/<workspacename>.git
+pit push -u origin master
